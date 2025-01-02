@@ -8,11 +8,6 @@ export default function Experience({addExp,setAddExp, initials, experience, setE
 
     function toggle() {
         setAddSection(!addSection);
-        if (!addSection && isEditing) {
-            setIsEditing(false);
-            setEditingIndex(null);
-            setExperience(initials);
-        }
     }
 
     function handleSubmit(e) {
