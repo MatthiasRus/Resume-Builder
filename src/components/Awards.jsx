@@ -7,11 +7,6 @@ export default function Awards({addAward, setAddAward,initials, awards, setAward
 
     function toggle(){
         setAddSection(!addSection);
-        if (!addSection && isEditing){
-            setIsEditing(false);
-            setEditingIndex(null);
-            setAwards(initials)
-        }
     }
     function handleDelete(index){
         const updatedAward = addAward.filter((_,i) => i!==index);
