@@ -8,11 +8,6 @@ export default function Education({addEduc,setAddEduc,initials, education, setEd
     function toggleSection(e){
         e.preventDefault();
         setAddSection(!addSection);
-        if (!addSection && isEditing){
-            setIsEditing(false);
-            setEditingIndex(null)
-            setEducation(initials)
-        }
     }
 
     function handleSubmit(e){
